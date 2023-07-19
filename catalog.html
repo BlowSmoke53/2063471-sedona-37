@@ -86,8 +86,9 @@
             </li>
           </ul>
         </div>
-        <div class="filter_menu">
-          <form class="catalog_filter" action="https://echo.htmlacademy.ru/" method="get">
+
+        <form class="filter_menu" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="catalog_filter">
             <fieldset class="product_filter_group">
               <legend class="product_filter_title">Инфраструктура:</legend>
               <div class="controls">
@@ -128,7 +129,7 @@
                   </label>
                 </div>
             </fieldset>
-          </form>
+          </div>
           <div class="price_menu">
             <fieldset class="price_filter_group">
               <legend class="product_filter_title">Стоимость, ₽:</legend>
@@ -162,7 +163,7 @@
               </li>
             </ul>
           </div>
-        </div>
+        </form>
       </section>
       <section class="hotel_block">
         <div class="header_hotel_block">
@@ -175,24 +176,18 @@
             </select>
             <ul class="view_menu">
               <li class="view">
-                <button aria-label="изменить вид" class="button_view" type="button">
-                  <div class="button_view_type">
-                    <span class="visually_hidden">Показать карточки</span>
-                  </div>
+                <button aria-label="изменить вид" class="button_view button_view_type" type="button">
+                    <span class="visually_hidden ">Показать карточки</span>
                 </button>
               </li>
               <li class="view">
-                <button aria-label="изменить вид" class="button_view" type="button">
-                  <div class="button_view_type view_window">
+                <button aria-label="изменить вид" class="button_view button_view_type view_window" type="button">
                     <span class="visually_hidden">Показать на весь экран</span>
-                  </div>
                 </button>
               </li>
               <li class="view">
-                <button aria-label="изменить вид" class="button_view" type="button">
-                  <div class="button_view_type view_list">
+                <button aria-label="изменить вид" class="button_view button_view_type view_list" type="button">
                     <span class="visually_hidden">Показать список</span>
-                  </div>
                 </button>
               </li>
             </ul>
