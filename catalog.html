@@ -130,18 +130,16 @@
             </fieldset>
           </form>
           <div class="price_menu">
-            <div class="price_set">
-              <p class="price_header">Стоимость, ₽:</p>
-              <ul class="price_value">
-                <li class="price_from">
-                  <p class="price_money">0</p>
-                  <p class="price_text">от</p>
-                </li>
-                <li class="price_to">
-                  <p class="price_money">9000</p>
-                  <p class="price_text">до</p>
-                </li>
-              </ul>
+            <fieldset class="price_filter_group">
+              <legend class="product_filter_title">Стоимость, ₽:</legend>
+              <div class="price_adjustment">
+                <label class="visually_hidden" for="min_price">Минимальная цена</label>
+                  <span class="price_adjustment_from">от</span>
+                  <input class="price_value min" type="text" name="min_price" placeholder="0" id="min_price">
+                  <label class="visually_hidden" for="max_price">максимальная цена</label>
+                  <span class="price_adjustment_up_to">до</span>
+                  <input class="price_value max" type="text" name="max_price" placeholder="9000" id="max_price">
+              </div>
               <div class="price_slider">
                 <div class="range_bar">
                   <div class="range_quantity" style="height: 4px; width: 226px">
@@ -154,7 +152,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </fieldset>
             <ul class="filter_button">
               <li class="button_apply">
                 <button aria-label="Применить фильтры" type="submit">Применить</button>

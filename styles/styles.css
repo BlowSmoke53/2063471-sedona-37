@@ -802,13 +802,16 @@ body {
   border-radius: 50%;
 }
 .control_input[type="checkbox"]:focus-visible + .control_mark {
-  border: 3px solid #82B3D3;
+  outline: 3px solid #82B3D3;
 }
-.control_input[type="radio"]:focus {
-  border: 3px solid #82B3D3;
+.control_input[type="radio"]:focus-visible + .control_mark {
+  outline: 3px solid #82B3D3;
 }
-.control_mark:hover {
-  border: 3px solid #82B3D3;
+.control_input[type="radio"]:focus + .control_mark {
+  outline: 3px solid #82B3D3;
+}
+.control_mark:focus {
+  outline: 3px solid #82B3D3;
 }
 .filter_menu {
   display: flex;
@@ -871,6 +874,117 @@ body {
   padding: 0;
   justify-content: start;
   align-items: start;
+}
+.price_filter_group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 32px;
+  margin: 0;
+  position: relative;
+  border:0 none;
+}
+.product_filter_title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  padding: 0;
+  padding-bottom: 32px;
+}
+.price_adjustment {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 2px;
+  width: 288px;
+}
+.price_adjustment_from {
+  position: absolute;
+  color: black;
+  padding-top: 12px;
+  margin-left: 106px;
+  opacity: 0.3;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  z-index: 1;
+}
+.price_value.min {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 260px;
+  width: 103px;
+  background: #F2F2F2;
+  border-radius: 4px 0 0 4px;
+  border: 0;
+  position: relative;
+}
+.price_value.max {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 260px;
+  width: 103px;
+  background: #F2F2F2;
+  border-radius: 0 4px 4px 0;
+  border: 0;
+  position: relative;
+}
+.price_value {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  opacity: 1;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  background: #F2F2F2;
+}
+.price_value::-webkit-input-placeholder{
+  color: #000000;
+}
+.price_value::-moz-placeholder {
+  color: #000000;
+}
+.price_value:hover {
+  background: #E6E6E6;
+  outline: none;
+}
+.price_value:focus-visible{
+  background: #E6E6E6;
+  outline: none;
+  box-shadow: 3px 3px 0 0 #83B3D3,
+              3px -3px 0 0 #83B3D3,
+             -3px 3px 0 0 #83B3D3,
+             -3px -3px 0 0 #83B3D3;
+}
+.price_value:active,
+.price_value:focus {
+  background: #F2F2F2;
+  outline: none;
+  box-shadow: 2px 2px 0 0 #000000,
+              2px -2px 0 0 #000000,
+             -2px 2px 0 0 #000000,
+             -2px -2px 0 0 #000000;
+}
+.price_adjustment_up_to {
+  position: absolute;
+  color: black;
+  padding-top: 12px;
+  margin-left: 249px;
+  opacity: 0.3;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  z-index: 1;
 }
 .price_set {
   display: grid;
@@ -1568,12 +1682,17 @@ body {
 .navigation_link:hover,
 .navigation_link:focus-visible {
   color: #686767;
+  outline: none;
 }
 .navigation_link:active {
   color: #68676730;
 }
 .like_sum_svg:hover {
   fill: #686767;
+}
+.like_sum_svg:focus-visible {
+  fill: #ac9292;
+  outline: none;
 }
 .like_sum_svg {
   fill: #000000;
@@ -1657,6 +1776,22 @@ body {
   color: rgb(255, 255, 255, 0.3);
 }
 .more a:disabled {
+  background-color: #E5E5E5;
+}
+.more a {
+  border-radius: 4px;
+}
+.more:hover,
+.more:focus-visible {
+  background-color: #615048;
+  cursor: pointer;
+  outline: none;
+}
+.more:active {
+  background-color: #756157;
+  color: rgb(255, 255, 255, 0.3);
+}
+.more:disabled {
   background-color: #E5E5E5;
 }
 .favorites button:hover,
@@ -1747,11 +1882,20 @@ body {
   cursor: pointer;
 }
 .navigation_link_user svg:hover,
-.navigation_link_user svg:focus-visible {
+.navigation_link_user svg:focus {
   fill: #aed2eb;
+  outline: none;
 }
 .navigation_link_user:active svg {
   fill: #3f5e72;
+}
+.navigation_link_user:focus-visible{
+  outline: none;
+  opacity: 30%;;
+}
+.navigation_link_user:focus{
+  outline: none;
+  opacity: 30%;;
 }
 .info_child_button:hover {
   background-color: #96cf67;
