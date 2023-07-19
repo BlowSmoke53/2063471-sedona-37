@@ -1209,7 +1209,6 @@ body{
   flex-direction: row;
   align-items: center;
   height: 20px;
-
 }
 .rating_result > span:before {
 	content: '★';
@@ -1812,7 +1811,6 @@ body{
   height: 72px;
   background-repeat: no-repeat;
 }
-
 .food::before {
   background-image: url(../images/food.svg);
   content: '';
@@ -1824,7 +1822,6 @@ body{
   height: 70px;
   background-repeat: no-repeat;
 }
-
 .gift::before {
   background-image: url(../images/gift.svg);
   content: '';
@@ -1835,6 +1832,15 @@ body{
   width: 64px;
   height: 76px;
   background-repeat: no-repeat;
+}
+.logo_sedona:hover,
+.logo_sedona:focus-visible{
+  scale: 1.1;
+  translate: 0 3px;
+}
+.logo_sedona:active{
+  scale: 0.9;
+  translate: 0 -4px;
 }
 .modal_win_close {
   display: none;
