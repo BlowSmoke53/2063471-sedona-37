@@ -59,7 +59,7 @@
             </a>
           </li>
           <li class="navigation_item">
-            <button class="navigation_buttom">ХОЧУ СЮДА!</button>
+            <button aria-label="Открывает окно поиска"  type="button" class="navigation_buttom">ХОЧУ СЮДА!</button>
           </li>
         </ul>
       </nav>
@@ -71,9 +71,9 @@
           <ul class="micro_nav">
             <li>
               <a class="home" href="index.html">
-                <svg width="13" role="img" aria-label="Вернуться на главную" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" fill="#fff"/>
-                  <path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" fill="#fff"/>
+                <svg class="home_icon" width="13" role="img" aria-label="Вернуться на главную" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"/>
+                  <path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z"/>
                 </svg>
               </a>
             </li>
@@ -146,10 +146,10 @@
               <div class="price_slider">
                 <div class="range_bar">
                   <div class="range_quantity" style="height: 4px; width: 226px">
-                    <button type="button" class="range_rectangle min" >
+                    <button aria-label="Увеличивает стоимость" type="button" class="range_rectangle min" >
                       <span class="visually_hidden">Минимальная стоимость</span>
                     </button>
-                    <button type="button" class="range_rectangle max" tabindex="2">
+                    <button aria-label="Уменьшает стоимость" type="button" class="range_rectangle max" tabindex="2">
                       <span class="visually_hidden">Максимальная стоимость</span>
                     </button>
                   </div>
@@ -157,8 +157,12 @@
               </div>
             </div>
             <ul class="filter_button">
-              <li class="button_apply"><button type="submit">Применить</button></li>
-              <li class="button_reset"><button type="reset">Сбросить</button></li>
+              <li class="button_apply">
+                <button aria-label="Применить фильтры" type="submit">Применить</button>
+              </li>
+              <li class="button_reset">
+                <button aria-label="Сбросить фильтры" type="reset">Сбросить</button>
+              </li>
             </ul>
           </div>
         </div>
@@ -174,7 +178,7 @@
             </select>
             <ul class="view_menu">
               <li class="view">
-                <button class="button_view" type="button">
+                <button aria-label="изменить вид" class="button_view" type="button">
                   <span class="visually_hidden">Показать карточки</span>
                   <svg role="img" aria-label="Показать карточки" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/>
@@ -182,7 +186,7 @@
                 </button>
               </li>
               <li class="view">
-                <button class="button_view" type="button">
+                <button aria-label="изменить вид" class="button_view" type="button">
                   <span class="visually_hidden">Показать на весь экран</span>
                   <svg role="img" aria-label="Показать на весь экран" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/>
@@ -190,7 +194,7 @@
                 </button>
               </li>
               <li class="view">
-                <button class="button_view" type="button">
+                <button aria-label="изменить вид" class="button_view" type="button">
                   <span class="visually_hidden">Показать список</span>
                   <svg role="img" aria-label="Показать списком" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" fill="#000"/>
@@ -211,7 +215,7 @@
                   <a href="#">ПОДРОБНЕЕ</a>
                 </li>
                 <li class="product_button favorites">
-                  <button type="button" >В ИЗБРАННОЕ</button>
+                  <button aria-label="Добавить в понравившееся" type="button" >В ИЗБРАННОЕ</button>
                 </li>
                 <li class="rating_result">
                   <span class="star"></span>
@@ -232,7 +236,7 @@
                   <a href="#">ПОДРОБНЕЕ</a>
                 </li>
                 <li class="product_button favorites like_hotel">
-                  <button type="button" >В ИЗБРАННОЕ</button>
+                  <button aria-label="Добавить в понравившееся" type="button" >В ИЗБРАННОМ</button>
                 </li>
                 <li class="rating_result">
                   <span class="star"></span>
@@ -253,7 +257,7 @@
                   <a href="#">ПОДРОБНЕЕ</a>
                 </li>
                 <li class="product_button favorites">
-                  <button type="button" >В ИЗБРАННОЕ</button>
+                  <button aria-label="Добавить в понравившееся" type="button" >В ИЗБРАННОЕ</button>
                 </li>
                 <li class="rating_result">
                   <span class="star"></span>
@@ -273,7 +277,7 @@
                   <a href="#">ПОДРОБНЕЕ</a>
                 </li>
                 <li class="product_button favorites">
-                  <button type="button" >В ИЗБРАННОЕ</button>
+                  <button aria-label="Добавить в понравившееся" type="button" >В ИЗБРАННОЕ</button>
                 </li>
                 <li class="rating_result">
                   <span class="star"></span>
@@ -311,10 +315,10 @@
         <form class="subscription_form" action="https://echo.htmlacademy.ru/" method="post">
           <div>
             <label for="subscription_email">
-              <input class="enter_email" type="email" placeholder="Ваш e-mail" name="subscription-email" id="subscription-email" required>
+              <input class="enter_email" type="email" placeholder="Ваш e-mail" name="subscription_email" id="subscription_email" required>
             </label>
           </div>
-          <button class="button subscription_button" type="submit">
+          <button  aria-label="Подписаться" class="button subscription_button" type="submit">
             <span class="visually_hiddens">Подписаться</span>
           </button>
         </form>
