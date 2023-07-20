@@ -651,6 +651,7 @@ body {
   margin: 0;
   background-image: url("../images/background_catalog.jpg");
   background-color: #000000;
+  background-repeat: no-repeat;
 }
 .filter_header {
   display: grid;
@@ -1259,7 +1260,6 @@ body {
 .button_view:hover,
 .button_view:active {
   border-color: #000000;
-  border: solid 2px;
   cursor: pointer;
 }
 .button_view:focus-visible {
@@ -1267,6 +1267,7 @@ body {
 }
 .product_list {
   display: flex;
+  align-items: flex-start;
   padding: 0;
   margin: 0;
   gap: 18px;
@@ -1277,7 +1278,9 @@ body {
   box-sizing: border-box;
   padding: 20px;
   margin: 0;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+
   gap: 16px;
   width: 342px;
   border: solid 1px;
@@ -1482,6 +1485,14 @@ body {
   margin: 0;
   position: relative;
 }
+.modal_form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  position: relative;
+  width: 577px;
+}
 .mode_front {
   max-width: 132px;
   margin: 0;
@@ -1681,20 +1692,18 @@ body {
   border-bottom: 9px solid #333333;
 }
 .error_text {
-  position: absolute;
   font-size: 16px;
   line-height: 21px;
   color: #ff5757;
-  top: 52px;
-  left: 157px;
+  margin-top: 4px;
+  margin-left: 157px;
 }
 .date_inform {
-  position: absolute;
   font-size: 16px;
   line-height: 21px;
   color: #333333;
-  top: 52px;
-  left: 157px;
+  margin-top: 4px;
+  margin-left: 157px;
 }
 .navigation_link:hover,
 .navigation_link:focus-visible {
