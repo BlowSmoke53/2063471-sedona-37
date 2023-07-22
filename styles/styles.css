@@ -39,10 +39,14 @@ body {
   margin: 0px;
   height: 352px;
   padding: 51px 371px 82px 371px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .index .subscription_section {
   background-image: url("../images/subscribe_background.jpg");
   background-color: #756257;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .navigation_link {
@@ -652,6 +656,7 @@ body {
   background-image: url("../images/background_catalog.jpg");
   background-color: #000000;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .filter_header {
   display: grid;
@@ -1263,6 +1268,7 @@ body {
   cursor: pointer;
 }
 .button_view:focus-visible {
+  outline: none;
   border-color: #82b3d3;
 }
 .product_list {
@@ -1425,7 +1431,7 @@ body {
 }
 .pagination_item {
   box-sizing: border-box;
-  width: 60px;
+  min-width: 60px;
   display: flex;
   justify-content: center;
   background-color: #82b3d3;
@@ -2062,5 +2068,5 @@ body {
   translate: 0 -4px;
 }
 .modal_win_close {
-  /* display: none; */
+  display: none;
 }
